@@ -1,0 +1,152 @@
+
+/* 店铺详情 */
+    .store-details{
+
+    }
+    .storePhotos{
+        margin-top: 0.58rem;
+    }
+    .pub-class{
+        margin-top: 0.75rem;
+    }
+    .pub-class h3{
+        width: 100%;
+        height: 0.5rem;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: normal;
+        position:relative;
+        line-height:0.5rem;
+    }
+    .pub-class h3:before{
+        position: absolute;
+        height: 1px;
+        width: 0.4rem;
+        background-color: #fff;
+        display: table;
+        content: " ";
+        left: 33.33%;
+        top: 0.23rem;
+    }
+    .pub-class h3:after{
+        position: absolute;
+        height: 1px;
+        width: 0.4rem;
+        background-color: #fff;
+        display: table;
+        content: " ";
+        right: 33.33%;
+        top: 0.23rem;
+    }
+    .storeIntroduction p,.storeInformation p,.MerchantsAnnouncement p{
+        font-size: 12px;
+        line-height: 0.4rem;
+    }
+    .storpMains{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .storeInformation p{
+		padding-left:  0.3rem;
+    }
+    .storeInformation .phones{
+
+        background:url("../images/storeBg/phone@2x.png")no-repeat left center;
+        background-size: 0.26rem 0.26rem;
+    }
+    .storeInformation .address{
+ 
+        background:url("../images/storeBg/Shape@2x.png")no-repeat left center;
+        background-size: 0.26rem 0.26rem;
+    }
+    .storePhotos{
+    	padding-left: 5%;
+    	padding-right: 5%;
+    }
+    .swiper-container{
+		width: 100%;
+		height: 2rem;
+    }
+    .swiper-container .swiper-wrapper{
+    	width: 100%;
+    	height: 100%;
+    }
+    .slide{
+		width: 100%;
+		height: 100%;
+    }
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .reviews{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0.3rem;
+    }
+    .reviewHeader{
+        height: 0.52rem;
+        line-height: 0.52rem;
+
+    }
+
+    .reviewHeader img{
+        float: left;
+        width: 0.52rem;
+        height:auto;
+    }
+    .reviewHeader h5{
+        float: left;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        font-weight: normal;
+        padding-left: 0.1rem;
+    }
+    .reviewHeader span{
+        float: right;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .level{
+        height: 0.24rem;
+        margin: 0.12rem 0;
+    }
+    .level i{
+        float: left;
+        width: 0.34rem;
+        height: 0.24rem;
+        background:url("../images/storeBg/star.png")no-repeat left center;
+        background-size: 0.24rem 0.24rem;
+    }
+    .level i.actives{
+        background:url("../images/storeBg/StarCopy.png")no-repeat left center;
+        background-size: 0.24rem 0.24rem;
+    }
+    .levelMains{
+        font-family: PingFangSC-Light;
+        font-size: 13px;
+        letter-spacing: 0;    
+    }
+
+    .imgs img{
+        float: left;
+        width: 30%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 0.15rem;
+    }
+    .imgs img:nth-child(3n+1){
+        margin-left: 0;
+    }
+    .reviews a{
+        display: block;
+        width:100%;
+        text-align: center;
+        color: #fff;
+        margin: 0.2rem auto 0;
+        width: 1.9rem;
+        padding: 0.05rem;
+    }

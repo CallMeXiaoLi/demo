@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品瀑布流</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/product_details.css">
+    
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class="header">
+                        <span class = "headers-left"></span>
+                        <h4>运动鞋</h4>  
+                        <span class = "headers-right"></span>                      
+                    </header>
+                    <section class = "goodsMains">
+                        <div class="goodsMain">
+                            <ul class="goodList">
+                                <li class = "active"><a  href="javascript:;">新品</a></li>
+                                <li class = "bg"><a href="javascript:;">销量</a></li>
+                                <li class = "bg"><a href="javascript:;">价格</a></li>
+                            </ul>
+                            <ul class = "goodss">
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class = "_goodsMain">
+                                            <img src="images/storeBg/Rectangle 3.png" alt=""/>
+                                            <p>新百论317NewBalance畅销火爆</p>
+                                            <span>￥1990</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class = "clear"></li>   
+                            </ul>
+                        </div>
+                        
+                    </section>
+                  
+                </div>
+            `,
+            methods:{
+                send(){
+                    Event.$emit('a-msg',this.a);
+                }
+            },
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            }
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+    </div>
+
+</body>
+<style>
+
+</style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

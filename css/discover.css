@@ -1,0 +1,446 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video h1,h2,h3,h4,h5{
+
+	margin: 0;
+	padding: 0;	
+	font-family: PingFangSC-Regular;
+
+}
+html{
+	 font-size: 100px !important; 
+
+}
+ul,li,ol{
+	list-style: none;
+}
+html,body,#box{
+	height:100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+a{
+	text-decoration: none;
+}i,em{
+	font-style:normal;
+}
+
+img{
+	display: block;
+	border:none;
+	vertical-align: middle;
+}
+
+#box .demo{
+	height: 100%;
+	/* display: -webkit-box;
+	    box-sizing: border-box;
+	    -webkit-box-orient: vertical; */
+	 position: relative;
+}
+/* 头部样式 */
+.header{
+	position: relative;
+	height: 0.44rem;;
+	width: 100%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.05);
+}
+
+.header span{
+	display: block;
+	width: 26.1%;
+	height: 100%;
+	position: absolute;
+	list-style: none;
+	line-height: 0.4rem;
+	font-family: PingFangSC-Light;
+	font-size: 12px;
+	color: #333333;
+	
+}
+.header .headers-left{
+	left: 0;
+}
+.header .headers-right{
+	right: 0;
+	background: url("../images/storeBg/search@2x.png") no-repeat 80% center;
+	background-size: 0.14rem 0.14rem;
+}
+.header span i{
+	display: block;
+	height: 100%;
+	width:80%;
+	margin: 0 auto;
+	padding-left: 0.1rem;
+	background:url("../images/artboard_06.png")no-repeat left center;
+	background-size: 0.09rem 0.12rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.header h4{
+	position: absolute;
+	width: 47.8%;
+	left: 26.1%;
+	font-size: 16px;
+    text-align: center;
+    line-height: 0.44rem;
+    height: 100%;
+
+}
+.header h4 p{
+
+	width: 1.79rem;
+	height: 0.28rem;
+	margin: 0.08rem auto;
+	border: 1px solid #979797;
+	border-radius: 100px;
+	position: relative;
+	box-sizing: border-box;
+}
+.header h4 p a{
+	display: block;
+	font-size: 14px;
+	color: #333333;
+	line-height: 0.28rem;
+	height: 100%;
+	border-radius: 100px;
+}
+.header h4 p a.a_left{
+
+	width: 0.92rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header h4 p a.a_right{
+	width: 0.92rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 100px;
+}
+.header h4 p a.active{
+	background: #8D6DEB;
+	color: #FFF;
+}
+/*  列表分类样式*/
+.icon-list{
+	width: 100%;
+	position: absolute;
+	top: 0.44rem;
+	left: 0;
+	bottom: 0.49rem;
+	overflow-y: scroll;
+}
+.icon-list .ul-list{
+	width: 100%;
+	overflow: hidden;
+}
+.icon-list .ul-list li{
+	width: 25%;
+	float: left;
+	margin-top: 0.4rem;
+}
+.icon-list .ul-list li a{
+	display: block;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+.icon-list .ul-list li a img{
+	width: 0.6rem;
+	height: 0.6rem;
+	margin: 0 auto;
+}
+.section-tab{
+	width: 100%;
+	margin-top: 0.3rem;
+	overflow: hidden;
+}
+.section-tab ul{
+	
+}
+.section-tab ul li{
+	float: left;
+	width: 33.33%;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+}
+.section-tab ul li a{
+	display: block;
+	height: 100%;
+	font-size: 14px;
+	color: #333333;
+}
+.main-store{
+	overflow: hidden;
+	padding-top: 3.5%;
+	padding-left: 4.1%;
+	padding-right: 4.1%; 
+
+}
+.main-store ul{
+	width: 100%;
+}
+.main-store ul li{
+	width: 100%;
+}
+.main-store ul li a{
+	display: block;
+}
+.main-store .merchants-list{
+	position:relative;
+	width: 100%;
+	overflow: hidden;
+	min-height: 1rem;
+}
+
+.merchants-list .shop-img{
+	position: absolute;
+	width: 21.3%;
+	/* margin-right: 4.3%; */
+
+}
+.main-store .merchants-list img{
+	
+	width: 0.8rem;
+	height: auto;
+	
+}
+
+ .merchants-list .merchants-center{
+	position: absolute;
+	left: 25.6%;
+	right: 0;
+}
+@media only screen and (max-width: 320px){
+    .merchants-list .merchants-center{
+		left: 28.4%;
+		right: 0;
+	}
+
+
+}
+.merchants-list .merchants-center h3{
+	width:100%;	
+	line-height: 0.28rem;
+
+} 
+.merchants-list .merchants-center h3 p{
+	width: 75%;
+	float: left;
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	color: #333;
+}
+ .merchants-list .merchants-center h3 i{
+ 	float: right;
+	font-size: 14px;
+	color: #333;
+} 
+.merchants-list .merchants-center p{
+	width:100%;
+	font-size: 12px;
+	color: #999;
+	line-height: 0.22rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+ .merchants-center span{
+ 	width:100%;
+ 	display: block;
+	font-size: 14px;
+	line-height: 0.32rem;
+
+}
+.merchants-list .merchants-center span em{
+	width: 80%;
+	float:left;
+	color: #333;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.merchants-list .merchants-center span i{
+	float:right;
+	color: #666;
+}
+
+/* 底部导航 */
+.discover .footer{
+	position: absolute; 
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 0.49rem;
+	box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.05);
+}
+.discover .footer .ul_list{
+	height:100%;
+	display: -webkit-box;
+	box-sizing: border-box;
+	display: box;
+	
+}
+
+.ul_list li{
+	-webkit-box-flex: 1;
+	width: 0;
+	text-align: center;	
+}
+.ul_list li a{
+	height: 100%;
+	display: block;
+	color: #fff;
+}
+.ul_list li .fa{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin: 0.025rem auto;
+	
+}
+.ul_list li a em{
+	display: block;
+	font-size: 12px;
+	color: #6B6B6B;
+}
+.ul_list i.fa-home{
+	background: url("../images/storeBg/home.png") no-repeat center;
+	background-size: 100%;
+}
+.ul_list i.fa-found{
+	background: url("../images/storeBg/location.png") no-repeat center;
+	background-size: 100%;
+}
+.ul_list i.fa-treasure{
+	background: url("../images/storeBg/treasure.png") no-repeat center;
+	background-size: 100%;
+}
+.ul_list i.fa-user{
+	background: url("../images/storeBg/mine.png") no-repeat center;
+	background-size: 100%;
+}
+
+/* 搜索结果页 */
+.searchResults{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.goodsMain header{
+	overflow: hidden;
+}
+.goodsMain header em{
+	position: absolute;
+	width: 0.15rem;
+	height: 0.15rem;
+	background: url("../images/storeBg/close.png") no-repeat  right center;
+	background-size: 100%;
+	right :4%;
+	top:0.2rem;
+}
+.goodsMain header h3{
+	font-family: PingFangSC-Regular;
+	font-size: 22px;
+	line-height: 32px;
+	color: #FFFFFF;
+	font-weight: normal;
+	border-bottom: 2px solid #A272FF;
+	margin-top: 0.60rem;
+}
+.goodsMains{
+    width: 100%;
+    position: absolute;
+    top: 0.44rem;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.goodsMain{
+    overflow: hidden;
+    font-family: PingFangSC-Light;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0.2rem;
+	background: #000;
+	opacity: 0.7;
+
+}
+.goodsMain ul{
+	overflow: hidden;
+}
+.goodList li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+    line-height:0.35rem;
+    height:0.35rem;
+}
+.goodList li a{
+	display: block;
+    font-size: 14px;
+    color: #CCC;
+
+}
+.goodList li.active a{
+    color: #fff;
+}
+.goodList li.bg{
+    background: url("../images/storeBg/TriangleCopy.png") no-repeat 70% center;
+    background-size: 0.07rem 0.03rem;
+}
+.goodList li.active :after{
+    position: absolute;
+    height: 2px;
+    width: 33.3%;
+    background-color: #fff;
+    display: table;
+    content: " ";
+    right: 33.33%;
+    top: 31px;
+}
+.goodss{
+    width: 100%;
+    margin-top: 0.1rem;
+    overflow: hidden;
+}
+.goodss li{
+    float: left;
+    width: 48.7%;
+    padding-bottom: 0.2rem;
+}
+.goodss li:nth-child(2n){
+    margin-left:2.6%;
+}
+.goodss li a{
+    display: block;
+}
+._goodsMain{
+    width: 100%;
+}
+._goodsMain img{
+     width: 100%;
+     height: auto;
+}
+
+._goodsMain p{
+    font-size: 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+._goodsMain span{
+    font-size: 12px;
+    color: #fff;   
+    display: block;
+}
+

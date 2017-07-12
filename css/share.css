@@ -1,0 +1,239 @@
+html{overflow-y:scroll; overflow-x: hidden;}
+body,div,ul,li,ol,span,img,input,form,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,i,em,b{ margin:0; padding:0;}
+
+body{ width: 100%;font-size:12px;font-family:"PingFangSC-Regular";}
+a{ text-decoration:none; color:#666666; }
+li{ list-style:none; }
+img{ border:none 0; display: block;}
+input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}
+html,body,#box{
+    height: 100%;
+}
+i,em{
+	font-style:normal;
+}
+b{
+	font-weight: normal;
+}
+
+
+.left{ float:left; _display:inline; }
+.right{ float:right; _display:inline; }
+.clear:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+ 
+ .demo{
+    height: 100%;
+    background:url("../images/storeBg/fenzu.png")no-repeat right center;
+    background-size: 100%;
+    opacity: 0.8;
+    position: relative;
+ }
+.header{
+	position: relative;
+	height: 0.88rem;;
+	width: 100%;
+	/* box-shadow: 0 1px 5px 0 rgba(0,0,0,0.05); */
+}
+
+.header span{
+	position: absolute;
+	width: 0.70rem;
+	height:100%;
+	top: 0;
+
+}
+.header .headers-left{
+	left: 0;
+	background:url("../images/storeBg/btn_back1.png")no-repeat right center;
+	background-size: 0.19rem 0.35rem;
+}
+.header .headers-right{
+	right: 0;
+	background:url("../images/storeBg/btn_share.png")no-repeat left center;
+	background-size: 0.34rem 0.38rem;
+}
+.header h4{
+	width: 100%;
+    text-align: center;
+    line-height: 0.88rem;
+    height: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+	font-weight: normal;
+
+}
+.header h4 p{
+
+	width: 3.58rem;
+	height: 0.56rem;
+	margin: 0.16rem auto;
+	border: 1px solid #979797;
+	border-radius: 100px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+.goodsMains{
+    width: 100%;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.goodsMain{
+    overflow: hidden;
+    font-family: PingFangSC-Light;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0.2rem;
+
+}
+
+
+.textExplains{
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: 0.5rem;
+    font-size: 12px;
+    
+}
+.textExplains .textTop{
+    height: 0.52rem;
+}
+.textExplains .textTop h3{
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: normal;
+    float: left;
+    line-height: 0.52rem;
+}
+.textExplains .textTop a{
+    float: left;
+    width: 0.8rem;
+    margin-left: 0.3rem;
+    font-size: 14px;
+    line-height: 0.52rem;
+    color: #FFFFFF;
+    background:url("../images/storeBg/btn_backcopy.png")no-repeat right center;
+    background-size: 0.14rem 0.24rem;
+
+}
+.textExplains .textTop i{
+    margin-top: 0.08rem;
+    width: 0.43rem;
+    height: 0.36rem;
+    float: right;    
+    background:url("../images/storeBg/ike.png")no-repeat right center;
+    background-size: 100%;
+}
+.textExplains p{
+    display: inline-block;
+    line-height: 0.42rem;
+    color: #FFFFFF;
+}
+.textExplains p.tittle{
+
+}
+.textExplains .p_phone{
+    padding-left: 0.36rem;
+    background:url("../images/storeBg/Fill 173@2x.png")no-repeat left center;
+    background-size: 0.26rem 0.26rem;
+
+}
+.textExplains .p_address{
+    padding-left: 0.32rem;
+    float: left;
+    background:url("../images/storeBg/Shape@2x.png")no-repeat left center;
+    background-size: 0.22rem 0.28rem;
+}
+.textExplains .p_phone i,.textExplains .p_address i{
+    padding-left: 0.2rem;
+    display: inline-block;    
+    width: 0.14rem;
+    height: 0.24rem; 
+    background:url("../images/storeBg/btn_backcopy.png")no-repeat right center;
+    background-size: 0.14rem 0.24rem;
+}
+.textExplains .buton{
+    float: right;
+    font-family: PingFangSC-Light;    
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 0.05rem 0.1rem;
+}
+.textExplains .dragBut{
+    display: block;
+    width: 1.6rem;
+    margin: 0 auto 0.5rem;
+    color: #333;
+    background:#fff;
+    border-radius: 4px;    
+    text-align: center;
+    padding: 0.05rem 0.1rem;
+    box-sizing: border-box;
+}
+
+
+
+/* 分享 */
+.shares{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 10;
+    overflow: hidden;
+}
+.shares h3{
+    width: 100%;
+    padding-top: 0.4rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color:#333;
+}
+.childs{
+    overflow: hidden;
+    padding-top: 0.46rem;
+}
+.childs li{
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+}
+.childs li div{
+    width:100%;
+    text-align: center;
+
+}
+.childs li img{
+    width: 1rem;
+    height: 0.9rem;
+    margin: 0 auto;
+}
+.childs li span{
+    display: block;
+    margin:0.28rem 0 0.6rem;
+    font-size: 12px;
+    color: #333333;
+}
+.shares .cancel{
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    box-shadow: 0 -1px 3px 0 rgba(0,0,0,0.20);
+}

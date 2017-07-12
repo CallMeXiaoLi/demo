@@ -1,0 +1,190 @@
+html{overflow-y:scroll; overflow-x: hidden;}
+body,div,ul,li,ol,span,img,input,form,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,i,em,b{ margin:0; padding:0;}
+
+body{ width: 100%;font-size:12px;font-family:"PingFangSC-Regular";}
+a{ text-decoration:none; color:#666666; }
+li{ list-style:none; }
+img{ border:none 0; display: block;}
+input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}
+
+i,em{
+	font-style:normal;
+}
+b{
+	font-weight: normal;
+}
+
+
+.left{ float:left; _display:inline; }
+.right{ float:right; _display:inline; }
+.clear:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.header{
+	position: relative;
+	height: 0.88rem;;
+	width: 100%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.05);
+}
+
+.header span{
+	position: absolute;
+	width: 0.70rem;
+	height:100%;
+	top: 0;
+
+}
+.header .headers-left{
+	left: 0;
+	background:url("../images/storeBg/btn_back.png")no-repeat right center;
+	background-size: 0.3rem 0.2rem;
+}
+.header .headers-right{
+	right: 0;
+	background:url("../images/storeBg/search@2x.png")no-repeat left center;
+	background-size: 0.3rem 0.3rem;
+}
+.header h4{
+	width: 100%;
+    text-align: center;
+    line-height: 0.88rem;
+    height: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+	font-weight: normal;
+
+}
+.header h4 p{
+	width: 3.58rem;
+	height: 0.56rem;
+	margin: 0.16rem auto;
+	border: 1px solid #979797;
+	border-radius: 100px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+.goodsMains{
+    width: 100%;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.section-tab{
+	width: 100%;
+	margin-top: 0.6rem;
+	overflow: hidden;
+}
+.section-tab ul{
+	
+}
+.section-tab ul li{
+	float: left;
+	width: 33.33%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+}
+.section-tab ul li a{
+	display: block;
+	height: 100%;
+	font-size: 14px;
+	color: #333333;
+}
+.main-store{
+	overflow: hidden;
+	padding-left: 4%;
+	padding-right: 4%; 
+	padding-bottom: 0.2rem;
+
+}
+.main-store ul{
+	width: 100%;
+}
+.main-store ul li{
+	width: 100%;
+	padding-top: 3.5%;
+}
+.main-store ul li a{
+	display: block;
+}
+.main-store .merchants-list{
+	position:relative;
+	width: 100%;
+	overflow: hidden;
+	min-height: 1rem;
+}
+
+.merchants-list .shop-img{
+	float: left;
+	width: 21.3%;
+	/* margin-right: 4.3%; */
+
+}
+.main-store .merchants-list img{	
+	width:100%;
+	height: auto;
+	
+}
+
+ .merchants-list .merchants-center{
+ 	padding-left: 4.3%;
+ 	float: left;
+	width: 74.4%;
+}
+.merchants-list .merchants-center h3{
+	width:100%;	
+	line-height: 0.36rem;
+	font-weight: normal;
+} 
+.merchants-list .merchants-center h3 p{
+	width: 75%;
+	float: left;
+	font-size: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	color: #333;
+}
+ .merchants-list .merchants-center h3 i{
+ 	float: right;
+	font-size: 14px;
+	color: #333;
+} 
+.merchants-list .merchants-center p{
+	width:100%;
+	font-size: 12px;
+	color: #999;
+	line-height: 0.34rem;
+	height:0.34rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+ .merchants-center span{
+ 	width:100%;
+ 	display: block;
+	font-size: 12px;
+	line-height: 0.54rem;
+	color: #FF4A46;
+}
+.merchants-list .merchants-center span em{
+	float:left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	letter-spacing: 0;
+}
+.merchants-list .merchants-center span i{
+	padding: 0 0.05rem;
+	border: 1px solid #FF4A46;
+	float:right;
+	border-radius: 0.07rem;
+}

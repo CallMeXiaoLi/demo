@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺评价</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/public/store.css">
+    <link rel="stylesheet" href="css/shop-evaluation.css">
+    
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class = "header">
+                        <span class = "headers-left"></span>
+                        <h4>店铺评价</h4>                        
+                    </header>
+                    <section class = "shopEvaluation">
+                        <div class="review">
+                            <div class="reviewHeader">
+                                <img src="images/storeBg/Head1.png" alt="">
+                                <h5>Forkboean</h5>
+                                <span>2小时前</span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="level">
+                                <i class= "actives"></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <div class="clear"></div>
+                            </div>
+                            <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+                            <div class="imgs">
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="reviewHeader">
+                                <img src="images/storeBg/Head1.png" alt="">
+                                <h5>Forkboean</h5>
+                                <span>2小时前</span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="level">
+                                <i class= "actives"></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <div class="clear"></div>
+                            </div>
+                            <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+                            <div class="imgs">
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="reviewHeader">
+                                <img src="images/storeBg/Head1.png" alt="">
+                                <h5>Forkboean</h5>
+                                <span>2小时前</span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="level">
+                                <i class= "actives"></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <div class="clear"></div>
+                            </div>
+                            <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+                            <div class="imgs">
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            `,
+            methods:{
+                send(){
+                    Event.$emit('a-msg',this.a);
+                }
+            },
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            }       
+           
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

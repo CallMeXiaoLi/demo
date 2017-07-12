@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品分类</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/goods-category.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src = "js/swiper-3.3.1.jquery.min.js"></script>
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class="header">
+                        <span class = "headers-left"></span>
+                        <h4>分类</h4>  
+                        <span class = "headers-right"></span>                      
+                    </header>
+                    <section class = "goodsMains">
+                        <div class="goodsTab">
+                            <div class="slideL swiper-Left swiper-container-vertical">
+                                <ul class = "tabLeft swiper-wrapper">
+                                    <li class = "active swiper-slide"><a href="javascript:;">美容护肤</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">美食酒店</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">酒店旅游</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">休闲娱乐</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">生活服务</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">百货商超</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">数码家电</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">营养保健</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">箱包配饰</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">运动户外</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">家具个护</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">母婴用品</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">母婴用品</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">母婴用品</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">母婴用品</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">母婴用品</a></li>
+                                    <li class = "swiper-slide"><a href="javascript:;">母婴用品</a></li>
+                                </ul>
+                            </div>
+                           <div class="slideR swiper-Right swiper-container-vertical">
+                                <ul class = "goodsRight swiper-wrapper">
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/weitu.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class = "swiper-slide">
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                        <a href="javascript:;">
+                                            <div class="goodsContent">
+                                                <img src="images/storeBg/Bitmap.png" alt=""/>
+                                                <span>口红</span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                        
+                    </section>
+                  
+                </div>
+            `,
+            methods:{
+                send(){
+                    Event.$emit('a-msg',this.a);
+                }
+            },
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            }
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }, mounted(){
+                    this.fnSlider();
+
+                },
+                methods:{
+                    fnSlider(){
+                        $(function(){
+                            var mySwiper = new Swiper('.swiper-Left',{
+                                pagination : '.swiper-pagination',
+                                //autoplay: 3000,//可选选项，自动滑动
+                                direction:"vertical",
+                                //autoplayDisableOnInteraction:false,//触摸之后还可以自动滚动
+                                speed:500,
+                                //loop:true,
+                                slidesPerView : 12,//'auto'
+                                resistanceRatio : 0.3,   //抵抗反弹
+                                //slidesPerGroup : 2,
+                                loopedSlides :1,
+                            });
+                            var mySwiper = new Swiper('.swiper-Right',{
+                                pagination : '.swiper-pagination',
+                                //autoplay: 3000,//可选选项，自动滑动
+                                direction:"vertical",
+                                //autoplayDisableOnInteraction:false,//触摸之后还可以自动滚动
+                                speed:500,
+                                //loop:true,
+                                slidesPerView : 5.2,//'auto'
+                                resistanceRatio : 0.3,   //抵抗反弹
+                                //slidesPerGroup : 2,
+                                //loopedSlides :2,
+                            })
+                        });
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+    </div>
+
+</body>
+<style>
+
+</style>
+
+<script>
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

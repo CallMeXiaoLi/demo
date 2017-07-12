@@ -1,0 +1,306 @@
+html{overflow-y:scroll; overflow-x: hidden;}
+body,div,ul,li,ol,span,img,input,form,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,i,em,b{ margin:0; padding:0;}
+
+body{ width: 100%;font-size:12px;font-family:"PingFangSC-Regular";}
+a{ text-decoration:none; color:#666666; }
+li{ list-style:none; }
+img{ border:none 0;}
+input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}
+
+i,em{
+	font-style:normal;
+}
+b{
+	font-weight: normal;
+}
+
+
+.left{ float:left; _display:inline; }
+.right{ float:right; _display:inline; }
+.clear:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.header{
+	position: relative;
+	height: 0.88rem;;
+	width: 100%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.05);
+}
+
+.header span{
+	display: block;
+	width: 26.1%;
+	height: 100%;
+	position: absolute;
+	list-style: none;
+	line-height: 0.88rem;
+	font-family: PingFangSC-Light;
+	font-size: 12px;
+	color: #333333;
+	
+}
+.header .headers-left{
+	left: 0;
+}
+.header .headers-right{
+	right: 0;
+	background: url("../images/storeBg/search@2x.png") no-repeat 80% center;
+	background-size: 0.28rem 0.28rem;
+}
+.header span i{
+	display: block;
+	height: 100%;
+	width:80%;
+	margin: 0 auto;
+	padding-left: 0.2rem;
+	background:url("../images/artboard_06.png")no-repeat left center;
+	background-size: 0.18rem 0.24rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.header h4{
+	position: absolute;
+	width: 47.8%;
+	left: 26.1%;
+	font-size: 16px;
+    text-align: center;
+    line-height: 0.88rem;
+    height: 100%;
+
+}
+.header h4 p{
+
+	width: 3.58rem;
+	height: 0.56rem;
+	margin: 0.16rem auto;
+	border: 1px solid #979797;
+	border-radius: 100px;
+	position: relative;
+	box-sizing: border-box;
+}
+.header h4 p a{
+	display: block;
+	font-size: 14px;
+	color: #333333;
+	line-height: 0.56rem;
+	height: 100%;
+	border-radius: 100px;
+	font-weight: normal;
+}
+.header h4 p a.a_left{
+
+	width: 1.84rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header h4 p a.a_right{
+	width: 1.84rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 100px;
+}
+.header h4 p a.active{
+	background: #8D6DEB;
+	color: #FFF;
+}
+
+
+.content{
+	max-width:6.4rem; 
+	margin:0 auto; 
+	width: 100%;
+}
+.content .banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden; 
+	z-index: 1;
+}
+.banner ul li{
+	width:6.4rem;
+	float:left;
+	position: relative;
+}
+.banner ul li img{
+	width:100%;
+	 display:block; 
+	 height: 4.06rem;
+	}
+.banner ol{
+	position:absolute;
+	 bottom:0.23rem; 
+	 left:25%;
+}
+.banner ol li{
+	width:0.8rem;
+	height:2px; 
+	background:#fff;
+	float:left; 
+}
+.banner ol li.active{
+ 	background:#333;
+}
+
+/* 商城-无忧商城*/
+/* banner图 */
+.artboard10-main{
+	overflow: scroll;
+	width: 100%;
+	position: absolute;
+	top: 0.44rem;
+	left: 0;
+	bottom: 0;
+}
+
+/* 分类 */
+.artboard10-section-list{
+	width: 100%;
+	position: absolute;
+	top: 0.88rem;
+	left: 0;
+	bottom: 0;
+	overflow-y: scroll;
+}
+.artboard10-section-list .ul-list{
+	width: 100%;
+	overflow: hidden;
+}
+.artboard10-section-list .ul-list li{
+	width: 25%;
+	float: left;
+	margin-top: 0.8rem;
+}
+.artboard10-section-list .ul-list li a{
+	display: block;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+.artboard10-section-list .ul-list li img{
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 auto;
+}
+.artboard10-section-list .ul-list li i{
+	display: block;
+}
+.shoppingCar{
+	position: fixed;
+	bottom: 0.8rem;
+	width: 1.3rem;
+	height: 1.3rem;
+	right: 6.7%;
+	background:url("../images/storeBg/icon9@2x.png")no-repeat right center;
+	background-size: 100%;
+	z-index: 100;
+}
+
+/* GoodsDetails */
+.GoodsDetails{
+	padding-top: 0.75rem;
+}
+.GoodsDetails h3,.GoodsDetails p{
+	padding-left: 5%;
+	
+}
+.GoodsDetails h3{
+	font-size: 24px;
+	color: #333333;
+	font-weight: normal;
+}
+.GoodsDetails p{
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 0.1rem;
+	font-family: PingFangSC-Thin;
+} 
+.GoodsDetails .goods-img{
+	width: 100%;
+	position: relative;
+	height: 4.2rem;
+	margin-bottom:0.22rem;
+} 
+.goods-img img{
+	width: 100%;
+	height: 4.2rem;
+} 
+.goods-img .goods-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	background: #000;
+}
+.goods-bg h4{
+	width: 100%;
+	margin-top: 1.5rem;
+	text-align: center;
+	font-family: PingFangSC-Medium;
+	font-size: 21px;
+	color: #FFF;
+	letter-spacing: 0;
+	font-weight: normal;
+} 
+.goods-bg p{
+	width: 100%;
+	text-align: center;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #FFF;
+	letter-spacing: 0;
+	padding-left: 0;
+	margin-top: 0.1rem;
+} 
+.swipBox{
+	padding-left:5%;
+	padding-right:5%;
+	overflow: hidden; 
+	margin-bottom: 0.2rem;
+}
+.goodSlide{
+	height: 2.24rem;
+	width: 100%;
+}
+.goodSlide .swiperSlide{
+	height: 100%;
+	width: 100%;
+
+}
+
+.goodSlide .swiperSlide .silde-list{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.goodSlide .swiperSlide img{
+	width: 100%;
+	height: auto;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.goodSlide .swiperSlide b{
+	display: block;
+	font-family: PingFangSC-Semibold;
+	font-size: 10px;
+	color: #333333;
+}
+.goodSlide .swiperSlide i{
+	display: block;
+	font-family: PingFangSC-Light;
+	font-size: 12px;
+	color: #333333;
+}
+
+
+

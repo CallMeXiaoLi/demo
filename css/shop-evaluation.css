@@ -1,0 +1,73 @@
+
+/* 店铺评价内容区 */
+.shopEvaluation {
+    width: 100%;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 0.4rem;
+    padding-top: 0.2rem;
+}
+.review{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0.3rem;
+}
+.reviewHeader{
+    height: 0.52rem;
+    line-height: 0.52rem;
+
+}
+
+.reviewHeader img{
+    float: left;
+    width: 0.52rem;
+    height:auto;
+}
+.reviewHeader h5{
+    float: left;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: normal;
+    padding-left: 0.1rem;
+}
+.reviewHeader span{
+    float: right;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+.level{
+    height: 0.24rem;
+    margin: 0.12rem 0;
+}
+.level i{
+    float: left;
+    width: 0.34rem;
+    height: 0.24rem;
+    background:url("../images/storeBg/star.png")no-repeat left center;
+    background-size: 0.24rem 0.24rem;
+}
+.level i.actives{
+    background:url("../images/storeBg/StarCopy.png")no-repeat left center;
+    background-size: 0.24rem 0.24rem;
+}
+.levelMains{
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    letter-spacing: 0;    
+}
+.review .imgs{
+   
+}
+.imgs img{
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 0.15rem;
+}
+.imgs img:nth-child(3n+1){
+    margin-left: 0;
+}

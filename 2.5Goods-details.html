@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/Goods-details.css">
+    
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class="header">
+                        <span class = "headers-left"></span>
+                        <h4></h4>  
+                        <span class = "headers-right"></span> 
+                        <em></em>                      
+                    </header>
+                    <section class = "goodsMains">
+
+                    </section>
+                  
+                </div>
+            `,
+            methods:{
+                send(){
+                    Event.$emit('a-msg',this.a);
+                }
+            },
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            }
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+    </div>
+    <div class="_goodsDetail">
+        <div class="goodsBg">
+            <img src="images/storeBg/Rectangle3.png" alt=""/>
+        </div>
+        <div class="section">
+            <h3>新百伦317 NewBaLance</h3>
+            <span>男士运动鞋</span>
+            <p><i>￥1480</i><em>￥1980</em><b>奖励148000积分</b></p>
+            <i>快递：10.00</i>
+        </div>
+        <div class="comments">
+            <h5>商品评价</h5>
+            <p class="user">Forkbeen</p>
+            <p class = "text">非常好的衣服，太漂亮了，哼喜欢。走在哪里回头率很高，太棒啦。棒棒棒！</p>
+            <p class = "size-classify">
+                <span class = "Color">颜色分类:</span><i>橘黄色</i>
+                <span class = "Size">尺码:</span><i>28</i>
+            </p>
+            <button>查看全部评论</button>
+        </div>  
+        <div class="goodsTable">
+            <h5>商品信息</h5>
+            <table>
+                <tr>
+                    <td>编码</td>
+                    <td>颜色</td>
+                    <td>品牌</td>
+                    <td>国家</td>
+                    <td>材质</td>
+                    <td>细节</td>
+                    <td>上市时间</td>
+                </tr>
+                <tr>
+                    <td>BA2334234234</td>
+                    <td>黑色</td>
+                    <td>Dolce&Gabbana(D&G)</td>
+                    <td>美国</td>
+                    <td>100%纯棉</td>
+                    <td>Supercoler:Nero MOTIVOcon<br/>stampa:tinta unita<br/>Supercolor: Nero<br/>stampa,tinta unita</td>
+                    <td>2017年春</td>
+                </tr>
+            </table>
+        </div>  
+    </div>
+</body>
+<style>
+.goodsMains{
+    width: 100%;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+
+
+</style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

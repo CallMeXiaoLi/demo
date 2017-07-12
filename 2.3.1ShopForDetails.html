@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/public/store.css">
+    <link rel="stylesheet" href="css/ShopForDetails.css">
+    
+    <style>
+
+    </style>
+
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src = "js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class="header">
+                        <span class = "headers-left"></span>
+                        <h4>宝马中国滨江分店</h4>                        
+                    </header>
+                    <section class = "shopEvaluation ">
+                            
+                        
+                    </section>
+                  
+                </div>
+            `,
+           
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }
+            });
+        };
+    </script>
+    <style>
+/*         .shopEvaluation {
+    width: 100%;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 0.4rem;
+    padding-top: 0.2rem;
+}
+.review{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0.3rem;
+}
+.reviewHeader{
+    height: 0.52rem;
+    line-height: 0.52rem;
+
+}
+
+.reviewHeader img{
+    float: left;
+    width: 0.52rem;
+    height:auto;
+}
+.reviewHeader h5{
+    float: left;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: normal;
+    padding-left: 0.1rem;
+}
+.reviewHeader span{
+    float: right;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+.level{
+    height: 0.24rem;
+    margin: 0.12rem 0;
+}
+.level i{
+    float: left;
+    width: 0.34rem;
+    height: 0.24rem;
+    background:url("images/storeBg/star.png")no-repeat left center;
+    background-size: 0.24rem 0.24rem;
+}
+.level i.actives{
+    background:url("images/storeBg/StarCopy.png")no-repeat left center;
+    background-size: 0.24rem 0.24rem;
+}
+.levelMains{
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    letter-spacing: 0;    
+}
+.review .imgs{
+   
+}
+.imgs img{
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 0.15rem;
+}
+.imgs img:nth-child(3n+1){
+    margin-left: 0;
+} */
+
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+        </div>
+        <div class="store-details">
+            <div class="storePhotos pub-class">
+                <h3>店铺照片</h3>
+                <div class="swiper-container">
+                    <div class = "swiper-wrapper">
+                        <div class="swiper-slide slide">
+                            <img src="images/storeBg/Rectangle 51.png" alt=""/>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="images/storeBg/Rectangle51Copy.png" alt=""/>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="images/storeBg/Rectangle 51.png" alt=""/>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="storpMains">
+                <div class="storeIntroduction pub-class">
+                    <h3>店铺照片</h3>
+                    <p>宝马集团是德国最成功的汽车和摩托车制造商之一，也是德国规模最大的制造工业公司之一。宝马集团拥有BMW、MINI和Rolls-Royce三个品牌，使宝马集团成为世界上唯一一家专注于高档领域的汽车和摩托车制造商。</p>
+                </div> 
+                <div class="storeInformation pub-class">
+                    <h3>店铺详细</h3>
+                    <p class = "phones">0571-86886828</p>
+                    <p class = "address">滨江区星光大道一期雪峰银座1楼&nbsp;&lt;</p>
+                </div>
+                <div class="MerchantsAnnouncement pub-class">
+                    <h3>商家公告</h3>
+                    <p>全选BMW1系运动版火爆上市，全来抢购吧</p>
+                </div>  
+                <div class="ShopEvaluation pub-class">
+                    <h3>店铺评价</h3>
+                    <div class="review reviews">
+                        <div class="reviewHeader">
+                            <img src="images/storeBg/Head1.png" alt="">
+                            <h5>Forkboean</h5>
+                            <span>2小时前</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="level">
+                            <i class= "actives"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <div class="clear"></div>
+                        </div>
+                        <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+                        <div class="imgs">
+                            <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                            <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                            <img src="images/storeBg/Rectangle51Copy2.png" alt=""/>
+                            <div class="clear"></div>
+                        </div>
+                        <a href="javascript:;">查看全部评论</a>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
+<!--         <div class="review">
+     <div class="reviewHeader">
+         <img src="images/storeBg/Head1.png" alt="">
+         <h5>Forkboean</h5>
+         <span>2小时前</span>
+         <div class="clear"></div>
+     </div>
+     <div class="level">
+         <i class= "actives"
+ 
+         ></i>
+         <i></i>
+         <i></i>
+         <i></i>
+         <i></i>
+         <div class="clear"></div>
+     </div>
+     <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+     <div class="imgs">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <div class="clear"></div>
+     </div>
+ </div>
+ <div class="review">
+     <div class="reviewHeader">
+         <img src="images/storeBg/Head1.png" alt="">
+         <h5>Forkboean</h5>
+         <span>2小时前</span>
+         <div class="clear"></div>
+     </div>
+     <div class="level">
+         <i class= "actives"></i>
+         <i></i>
+         <i></i>
+         <i></i>
+         <i></i>
+         <div class="clear"></div>
+     </div>
+     <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+     <div class="imgs">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <div class="clear"></div>
+     </div>
+ </div>
+ <div class="review">
+     <div class="reviewHeader">
+         <img src="images/storeBg/Head1.png" alt="">
+         <h5>Forkboean</h5>
+         <span>2小时前</span>
+         <div class="clear"></div>
+     </div>
+     <div class="level">
+         <i class= "actives"></i>
+         <i></i>
+         <i></i>
+         <i></i>
+         <i></i>
+         <div class="clear"></div>
+     </div>
+     <p class = "levelMains">宝马汽车真的太好看了，在路上的我简直风流倜傥，一表人才，玉树凌风，风度翩翩。</p>
+     <div class="imgs">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <img src="images/storeBg/Rectangle 51 Copy 2.png" alt="">
+         <div class="clear"></div>
+     </div>
+ </div>  --> 
+    </div>
+    
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        speed:1000,
+        loop:true,
+        slidesPerView :3.2,
+        autoplayDisableOnInteraction:false,//触摸之后还可以自动滚动
+        spaceBetween :10,
+        loopedSlides :10,
+        pagination : '.swiper-pagination',
+        paginationType : 'fraction',
+        //pagination : '#swiper-pagination1',
+    })
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

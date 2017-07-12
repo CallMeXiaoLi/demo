@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联盟商家首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/Alliance-merchants.css">
+
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.7.2.js"></script>
+
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class="header">
+                        <span class = "headers-left"></span>
+                        <h4></h4>  
+                        <span class = "headers-right"></span>                      
+                    </header>
+                    <section class = "goodsMains">
+                        <div class="textExplains">
+                            <a class = "dragBut" href="javascript:;">往下拖动&lt;&lt;</a>
+                            <div class = "textTop">
+                                <h3>宝马中国滨江分店</h3>
+                                <a href="javascript:;">详情</a>
+                                <i></i>
+                                <em class = "clear"></em>
+                            </div>
+                            <p class = "p_phone">0571-86880828<i></i></p>
+                            <div>
+                                <p class = "p_address">滨江区星光大道一期雪峰银座1楼<i></i></p>
+                                <a  class = "buton" href="javascript:;">去付款</a>
+                            </div>
+                        </div> 
+                        
+                        
+                    </section>
+                  
+                </div>
+            `,
+            methods:{
+                send(){
+                    Event.$emit('a-msg',this.a);
+                }
+            },
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            }
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }, mounted(){
+                    this.fnSlider();
+
+                },
+                methods:{
+                    fnSlider(){
+
+                       
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+    </div>
+
+</body>
+<style>
+.textExplains{
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: 0.5rem;
+    font-size: 12px;
+    
+}
+.textExplains .textTop{
+    height: 0.52rem;
+}
+.textExplains .textTop h3{
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: normal;
+    float: left;
+    line-height: 0.52rem;
+}
+.textExplains .textTop a{
+    float: left;
+    width: 0.8rem;
+    margin-left: 0.3rem;
+    font-size: 14px;
+    line-height: 0.52rem;
+    color: #FFFFFF;
+    background:url("images/storeBg/btn_backcopy.png")no-repeat right center;
+    background-size: 0.14rem 0.24rem;
+
+}
+.textExplains .textTop i{
+    margin-top: 0.08rem;
+    width: 0.43rem;
+    height: 0.36rem;
+    float: right;    
+    background:url("images/storeBg/ike.png")no-repeat right center;
+    background-size: 100%;
+}
+.textExplains p{
+    display: inline-block;
+    line-height: 0.42rem;
+    color: #FFFFFF;
+}
+.textExplains p.tittle{
+
+}
+.textExplains .p_phone{
+    padding-left: 0.36rem;
+    background:url("images/storeBg/Fill 173@2x.png")no-repeat left center;
+    background-size: 0.26rem 0.26rem;
+
+}
+.textExplains .p_address{
+    padding-left: 0.32rem;
+    float: left;
+    background:url("images/storeBg/Shape@2x.png")no-repeat left center;
+    background-size: 0.22rem 0.28rem;
+}
+.textExplains .p_phone i,.textExplains .p_address i{
+    padding-left: 0.2rem;
+    display: inline-block;    
+    width: 0.14rem;
+    height: 0.24rem; 
+    background:url("images/storeBg/btn_backcopy.png")no-repeat right center;
+    background-size: 0.14rem 0.24rem;
+}
+.textExplains .buton{
+    float: right;
+    font-family: PingFangSC-Light;    
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 0.05rem 0.1rem;
+}
+.textExplains .dragBut{
+    display: block;
+    width: 1.6rem;
+    margin: 0 auto 0.5rem;
+    color: #333;
+    background:#fff;
+    border-radius: 4px;    
+    text-align: center;
+    padding: 0.05rem 0.1rem;
+    box-sizing: border-box;
+}
+</style>
+
+<script>
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

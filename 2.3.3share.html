@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/share.css">
+
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.7.2.js"></script>
+
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo discover">
+                    <header class="header">
+                        <span class = "headers-left"></span>
+                        <h4></h4>  
+                        <span class = "headers-right"></span>                      
+                    </header>
+                    <section class = "goodsMains">
+                        <div class="textExplains">
+                            <a class = "dragBut" href="javascript:;">往下拖动&lt;&lt;</a>
+                            <div class = "textTop">
+                                <h3>宝马中国滨江分店</h3>
+                                <a href="javascript:;">详情</a>
+                                <i></i>
+                                <em class = "clear"></em>
+                            </div>
+                            <p class = "p_phone">0571-86880828<i></i></p>
+                            <div>
+                                <p class = "p_address">滨江区星光大道一期雪峰银座1楼<i></i></p>
+                                <a  class = "buton" href="javascript:;">去付款</a>
+                            </div>
+                        </div> 
+                    </section>
+                    <div class="shares">
+                        <h3>分享到</h3>
+                        <ul class ="childs">
+                            <li>
+                                <a href="javascript:;">
+                                    <div>
+                                        <img src="images/storeBg/ico_qq@2x.png" alt=""/>
+                                        <span>QQ</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div>
+                                        <img src="images/storeBg/ico_wechat@2x.png" alt=""/>
+                                        <span>微信</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div>
+                                        <img src="images/storeBg/ico_moments@2x.png" alt=""/>
+                                        <span>QQ朋友圈</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div>
+                                        <img src="images/storeBg/weibo@2x.png" alt=""/>
+                                        <span>微博</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class= "cancel" href = "javascript:;">取消</a>
+                    </div>
+                </div>
+            `,
+            methods:{
+                send(){
+                    Event.$emit('a-msg',this.a);
+                }
+            },
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            }
+        };
+        
+
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                }, mounted(){
+                    this.fnSlider();
+
+                },
+                methods:{
+                    fnSlider(){
+
+                       
+                    }
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        <com-a></com-a>
+        
+    </div>
+
+</body>
+<style>
+
+.shares{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 10;
+    overflow: hidden;
+}
+.shares h3{
+    width: 100%;
+    padding-top: 0.4rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color:#333;
+}
+.childs{
+    overflow: hidden;
+    padding-top: 0.46rem;
+}
+.childs li{
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+}
+.childs li div{
+    width:100%;
+    text-align: center;
+
+}
+.childs li img{
+    width: 1rem;
+    height: 0.9rem;
+    margin: 0 auto;
+}
+.childs li span{
+    display: block;
+    margin:0.28rem 0 0.6rem;
+    font-size: 12px;
+    color: #333333;
+}
+.shares .cancel{
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    box-shadow: 0 -1px 3px 0 rgba(0,0,0,0.20);
+}
+</style>
+
+<script>
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

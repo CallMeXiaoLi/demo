@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城-无忧商城长图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/artboard10.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <style>
+
+    </style>
+    <script type="text/javascript" src = "js/vue.js"></script>
+    <script type="text/javascript" src = "js/rem.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.7.2.js"></script>
+
+    <script type="text/javascript" src = "js/swipe.js"></script>
+    <script type="text/javascript" src = "js/swiper-3.3.1.jquery.min.js"></script>
+    <script>
+        //准备一个空的实例对象
+        var Event=new Vue();
+
+
+        var A={
+            template:`
+                <div class = "demo">
+                    <header class="header">
+                        <span class = "headers-left"><i>杭州</i></span>
+                        <h4>
+                            <p>
+                                <a class = "a_left">无忧商城</a>
+                                <a class = "a_right active">联盟商家</a>
+                            </p>
+                        </h4>
+                        <span class = "headers-right"></span>
+                    </header>
+                    <section class = "artboard10-section-list">
+                        <div class = "content">
+                            <div class="banner">
+                                <ul class="clearfix">
+                                    <li><img src="images/storeBg/bj1.png" alt=""/>
+                                        
+                                    </li>
+                                    <li><img src="images/storeBg/bj1.png" alt=""/>
+                                        
+                                    </li>
+                                    <li><img src="images/storeBg/bj1.png" alt=""/>
+                                        
+                                    </li>
+                                    <li><img src="images/storeBg/bj1.png" alt=""/>
+                                        
+                                    </li>
+                                </ul>
+                                <ol id = "ol">
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <ul class = "ul-list">
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon1@2x.png" alt=""/>
+                                    <i>美食</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon2@2x.png" alt=""/>
+                                    <i>休闲娱乐</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon3@2x.png" alt=""/>
+                                    <i>酒店</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon4@2x.png" alt=""/>
+                                    <i>生活服务</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon5@2x.png" alt=""/>
+                                    <i>百货商超</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon6@2x.png" alt=""/>
+                                    <i>丽人</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon7@2x.png" alt=""/>
+                                    <i>旅游</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: ;">
+                                    <img src="images/storeBg/icon8@2x.png" alt=""/>
+                                    <i>其他</i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="shoppingCar"></div>
+                        <div class="GoodsDetails">
+                            <h3>新品速递</h3>
+                            <p>每日10点准时上新</p>
+                            <div class="goods-img">
+                                <img src="images/storeBg/car4.png" alt=""/>
+                                <div class = "goods-bg">
+                                    <h4>全新BMW 5系瞩目上市</h4>
+                                    <p>上市优惠欲购从速</p>
+                                </div>
+                            </div>
+                            <div class="swipBox">
+                                <div class = "goodSlide swiper-container">
+                                    <ul class = "swiperSlide swiper-wrapper">
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods1.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i></li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods2.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/car3.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods1.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods2.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/car1.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        
+                                    </ul>
+
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="GoodsDetails">
+                            <h3>热门推荐</h3>
+                            <p>每日10点准时上新</p>
+                            <div class="goods-img">
+                                <img src="images/storeBg/car4.png" alt=""/>
+                                <div class = "goods-bg">
+                                    <h4>全新BMW 5系瞩目上市</h4>
+                                    <p>上市优惠欲购从速</p>
+                                </div>
+                                
+                            </div>
+                            <div class="swipBox">
+                                <div class = "goodSlide swiper-container">
+                                    <ul class = "swiperSlide swiper-wrapper">
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods1.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i></li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods2.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/car3.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods1.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/goods2.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        <li class = "silde-list swiper-slide">
+                                            <img src="images/storeBg/car1.png" alt=""/>
+                                            <b>BMW520</b><i>￥450000</i>
+                                        </li>
+                                        
+                                    </ul>
+
+                                </div>
+                            </div>                            
+                        </div>
+                         
+                    </section>
+                    <footer class = "footer">
+                        
+                    </footer>
+                </div>
+            `,
+
+            
+            data(){
+                return {
+                    a:'我是a数据'
+                }
+            },
+        
+        };
+       
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                components:{
+                    'com-a':A,
+
+                },
+                mounted(){
+                    this.fnSlider();
+
+                },
+                methods:{
+                    fnSlider(){
+                        $(function (){
+                            var mySwipe = new Swipe($('.banner')[0],{
+                                auto:2000,
+                                continuous:true,
+                                stopPropation:true,
+                                callback:function (index,element){
+                                    $('.banner ol li').removeClass('active');
+                                    $('.banner ol li').eq(index).addClass('active');
+                                }
+                            });
+                            
+                            var mySwiper = new Swiper('.swiper-container',{
+                                pagination : '.swiper-pagination',
+                                speed:1000,
+                                loop:true,
+                                slidesPerView :3.4,
+                                autoplayDisableOnInteraction:false,//触摸之后还可以自动滚动
+                                spaceBetween :10,
+                                loopedSlides :0,
+
+                               // paginationType : 'fraction',
+                            })
+                        });
+                    }
+                },
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id = "box">
+        <com-a></com-a>
+        
+    </div>
+    
+</body>
+<script>
+    
+  
+</script>
+
+                        
+</html>
+
+<!-- <div class="swiper-wrapper clearfix">
+                <div class="swiper-slide slide">
+                    <img src="images/20161128123624.jpg" alt=""/>
+                    <img src="images/20161227185203.jpg" alt="">
+                    <img src="images/20161228104555.jpg" alt="">
+                    <img src="images/20161128124353.jpg" alt="">
+                    
+                </div>
+                <div class="swiper-slide slide">
+                    <img src="images/20161128123624.jpg" alt="">
+                    <img src="images/20161227185203.jpg" alt="">
+                    <img src="images/20161228104555.jpg" alt="">
+                    <img src="images/20161128124353.jpg" alt="">
+                </div> 
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
